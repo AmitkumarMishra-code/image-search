@@ -1,8 +1,9 @@
-export default function ResultImage(props){
-    console.log(props)
-    return(
+export default function ResultImage(props) {
+    return (
         <div className="image">
-            <img src={props.value.src.medium} alt="" />
+            <a href={props.value.src.landscape}>
+                <img src={props.value.src.landscape} alt="" />
+            </a>
         </div>
     )
 }
